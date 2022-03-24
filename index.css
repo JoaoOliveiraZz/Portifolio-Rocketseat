@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-hmtl, body{
+html, body{
     height: 100vh;
     width: 100%;
+    background: #22212C;
+    color: #837E9F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .col .card{
+    background-color: #302F3D;
+    -webkit-box-shadow: 6px 5px 26px -11px rgba(0,0,0,0.92); 
+box-shadow: 6px 5px 26px -11px rgba(0,0,0,0.92);
+margin-left: 40px;
 }
 
 .container{
@@ -15,8 +27,8 @@ hmtl, body{
     
 }
 .container .col:first-child .card:first-child{
-    border: 3px solid black;
-    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 40px;
     padding: 20px;
 
     display: flex;
@@ -28,9 +40,9 @@ hmtl, body{
     margin: 10px;
 }
 .container .col:first-child .card{
-    border: 3px solid black;
+    
     border-radius: 20px;
-    margin: 10px;
+    margin-bottom: 30px;
     padding: 20px;
 
     display: flex;
@@ -45,9 +57,9 @@ hmtl, body{
     flex-direction: row;
 }
 .container .col:nth-child(2) .direction .card{
-    border: 2px solid black;
+   
     width: 50%;
-    margin: 30px;
+    margin-top: 30px;
     height: 186px;
     border-radius: 10px;
 }
@@ -56,16 +68,69 @@ hmtl, body{
     width: 100%;
     border: 2px solid purple;
 
+    border-radius: 20px;
+
     display: flex;
-    justify-content:space-around
+    justify-content:space-between;
 }
+.container .col nav {
+    margin: 30px;
+    height: 86px;
+    border-radius: 20px;
+    border: 2px solid purple;
+    background-color: #302F3D;
+    -webkit-box-shadow: 6px 5px 26px -11px rgba(0,0,0,0.92); 
+box-shadow: 6px 5px 26px -11px rgba(0,0,0,0.92);
+}
+
 .container .card .Profile{
     border: 2px;
     border-radius: 50%;
     height: 128px;
     width: 128px;
+    border: 2px solid #00ff00;
 }
 
 .container .card ul li{
     list-style: none;
+}
+.container .col:first-child .card p{
+    font-size: small;
+}
+.container .col .card:nth-child(2) {
+    vertical-align: middle;
+}
+.container .col:first-child .card:nth-child(3) .division {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .col:first-child .card:nth-child(3) .division a{
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #CB92B1;
+    width: 86px;
+    height: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .col:first-child .card:nth-child(3) h2{
+    margin: 10px;
+}
+.container .col:first-child .card:nth-child(4) ul li{
+    list-style: circle;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.container .col:first-child .card:nth-child(5) p{
+    margin-top: 10px;
+}
+
+.container .col:first-child .card:nth-child(5) small{
+    margin-top: 2px;
 }
